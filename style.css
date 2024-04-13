@@ -56,6 +56,7 @@ body {
 .nav :nth-last-child(1) {
   /* background-color: rgb(217, 182, 250); */
   width: 26%;
+  border: none;
 }
 
 .centre {
@@ -148,7 +149,6 @@ body {
   object-fit: cover;
   object-position: 30% 30%;
   margin: 1.2vw;
-  
 }
 
 @keyframes animate {
@@ -160,26 +160,25 @@ body {
   }
 }
 
-.alphabet  {
-  height:10vh ;
+.alphabet {
+  height: 10vh;
   width: 100%;
   /* background-color: beige; */
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: center;
-  gap: .6vw;
-
+  gap: 0.6vw;
 }
 
-.alphabet h5  {
+.alphabet h5 {
   font-size: 2vw;
   text-transform: uppercase;
   font-weight: 400;
   font-style: italic;
-  border-bottom: 2px  solid #000;
+  border-bottom: 2px solid #000;
   letter-spacing: 4px;
 }
-.alphabet h6  {
+.alphabet h6 {
   font-size: 1vw;
   text-transform: uppercase;
   font-weight: 400;
@@ -187,11 +186,11 @@ body {
   letter-spacing: 4px;
   border: 1px solid rgb(255, 255, 255);
   border-radius: 50%;
-  padding: .8vw 1vw;
+  padding: 0.8vw 1vw;
   cursor: pointer;
-  transition: .1s ease-in;
+  transition: 0.1s ease-in;
 }
-.alphabet h6:hover  {
+.alphabet h6:hover {
   border-radius: 50%;
   border: 1px solid rgb(39, 39, 39);
 }
@@ -230,7 +229,7 @@ body {
 }
 .page2 .page2-part2 img {
   width: 90%;
-  height : 90%;
+  height: 90%;
   object-fit: cover;
 }
 .page2 .page2-part2 .box {
@@ -261,11 +260,10 @@ body {
   padding-top: 6vw;
 }
 
-.page3>h1 {
+.page3 > h1 {
   text-align: center;
-  text-transform:uppercase ;
-  font-size: 3VW;
-
+  text-transform: uppercase;
+  font-size: 3vw;
 }
 .elem {
   height: 16vh;
@@ -276,7 +274,6 @@ body {
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
-
 }
 .elem:nth-last-child(1) {
   border-bottom: 2px solid #000;
@@ -287,7 +284,6 @@ body {
   text-transform: uppercase;
   font-weight: 500;
   width: 6%;
-
 }
 
 .elem .elem-part2 {
@@ -300,7 +296,7 @@ body {
   transition: ease 0.3s;
 }
 .elem-part2 h5 {
-  font-size: .8vw;
+  font-size: 0.8vw;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -315,7 +311,7 @@ body {
   opacity: 0;
   transition: all ease 0.7s;
 }
-.elem:hover img{
+.elem:hover img {
   opacity: 1;
   left: 20%;
 }
@@ -332,7 +328,7 @@ body {
   white-space: nowrap;
   overflow-x: hidden;
   overflow-y: hidden;
-  padding: .2vw;
+  padding: 0.2vw;
 }
 
 .marque h1 {
@@ -342,20 +338,20 @@ body {
   font-weight: 900;
   -webkit-text-stroke: 2px #000;
   margin-right: 16px;
-  color :transparent;
+  color: transparent;
   animation-name: marqueeAnimation;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  letter-spacing: .3vw;
+  letter-spacing: 0.3vw;
 }
 
-@keyframes  marqueeAnimation {
+@keyframes marqueeAnimation {
   from {
     transform: translateX(0);
   }
   to {
-    transform: translateX(calc(-100%  - 20px));
+    transform: translateX(calc(-100% - 20px));
   }
 }
 .footer {
@@ -365,4 +361,156 @@ body {
   justify-content: center;
   align-items: center;
   /* background-color: #ff5353; */
+}
+
+@media (max-width: 600px) {
+  .nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .nav h1 {
+    height: 100%;
+    width: 50%;
+    margin-right: 50px;
+  }
+  .nav h2 {
+    width: 100%;
+    display: none;
+  }
+
+  .nav :nth-last-child(1) {
+    width: 56%;
+    border: none;
+    display: contents;
+  }
+  /* ///////////////////////// */
+  .centre {
+    height: 60%;
+    width: 100%;
+  }
+  .overlay {
+    height: 30%;
+    width: 100%;
+  }
+  .over1 h1 {
+    font-size: 9vw;
+  }
+  .scroll {
+    height: 18vh;
+    width: 100%;
+  }
+  .container {
+
+    overflow: hidden;
+  }
+  .scroll img {
+    height: 80%;
+    border-radius: 50%;
+    width: 30%;
+    object-fit: cover;
+    object-position: 30% 30%;
+    margin: 1.4vw;
+  }
+  .alphabet {
+    height: 10vh;
+    width: 100%;
+    gap: 0.3vw;
+    overflow: hidden;
+  }
+  
+  .alphabet h5 {
+    font-size: 5vw;
+    letter-spacing: 4px;
+  }
+  .alphabet h6 {
+    font-size: 5vw;
+  }
+  .alphabet h6:hover {
+    border-radius: 50%;
+    border: 1px solid rgb(39, 39, 39);
+  }
+  .page2 {
+    width: 100%;
+    height: 250vh;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  
+  .page2 .page2-part1 {
+    width: 100%;
+    height: 50%;
+  }
+  .page2 .page2-part2 {
+    width: 100%;
+    height: 35%;
+  }
+  .page2 .page2-part2 img {
+    width: 100%;
+  }
+  .page2 .page2-part2 .box {
+    width: 100%;
+    height: 12%;
+    padding: 1vw;
+    padding-top: 18vw;
+  }
+  /* /////////////////////////////// */
+
+  .page3 {
+    width: 100%;
+    height: 80%;
+    /* background-color: royalblue; */
+    padding: 3vw;
+    padding-top: 6vw;
+  }
+  
+  .page3 > h1 {
+    font-size: 15vw;
+  }
+  .elem {
+    height: 16vh;
+    width: 100%;
+}
+  .elem:nth-last-child(1) {
+    border-bottom: 2px solid #000;
+  }
+  
+  .elem h4 {
+    font-size: 4vw;
+  }
+  
+  .elem .elem-part2 {
+    width: 45%;
+  }
+  
+  .elem-part2 h1 {
+    font-size: 6vw;
+  }
+  .elem-part2 h5 {
+    font-size: 3vw;
+  }
+  
+  .elem:hover img {
+    left: 25%;
+  }
+  
+  .elem:hover .elem-part2 h1 {
+    font-size: 8vw;
+  }
+  .marque h1 {
+    font-size: 10vw;
+  }
+  .footer {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #ff5353; */
+    font-size: 7vw;
+  }
 }
