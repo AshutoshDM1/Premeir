@@ -1,0 +1,368 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  padding-top: 0.1px;
+  /* background-color: rgb(255, 145, 235); */
+  position: relative;
+}
+
+.nav {
+  height: 10vh;
+  width: 100%;
+  margin-top: 40px;
+  /* background-color: rgb(93, 245, 124); */
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav h1 {
+  /* background-color: blueviolet; */
+  height: 100%;
+  width: 16%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  border-right: 2px solid #000;
+  letter-spacing: -2px;
+}
+.nav h2 {
+  /* background-color: blueviolet; */
+  height: 100%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid #000;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.nav :nth-last-child(1) {
+  /* background-color: rgb(217, 182, 250); */
+  width: 26%;
+}
+
+.centre {
+  height: 90%;
+  width: 100%;
+  /* background-color: blanchedalmond; */
+  padding: 5vw;
+  position: relative;
+}
+
+.content {
+  /* background-color: rgb(255, 59, 219); */
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.content video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  /* visibility: hidden; */
+}
+
+.overlay {
+  height: 50%;
+  width: 100%;
+  /* background-color: royalblue; */
+  position: absolute;
+  bottom: 0;
+  padding: 3vw;
+  color: white;
+}
+
+.over1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.over1 h1 {
+  font-size: 3.6vw;
+}
+.over1 h2 {
+  font-size: 1vw;
+  padding: 2vw 2.4vw;
+  border-radius: 50%;
+  border: 1px solid white;
+  border-bottom: 5px solid white;
+}
+.over2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid #ffffff;
+}
+
+.over2 h4 {
+  font-size: 1.2vw;
+  font-weight: 500;
+}
+.over2 img {
+  height: 3vw;
+}
+
+.scroll {
+  height: 35vh;
+  width: 100%;
+  /* background-color: cadetblue; */
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  /* background-color: rgb(4, 124, 128); */
+  display: inline-block;
+  animation-name: animate;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  /* padding: 2vw; */
+}
+.scroll img {
+  /* visibility: hidden; */
+  height: 80%;
+  border-radius: 50%;
+  width: 14%;
+  object-fit: cover;
+  object-position: 30% 30%;
+  margin: 1.2vw;
+  
+}
+
+@keyframes animate {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(-100%);
+  }
+}
+
+.alphabet  {
+  height:10vh ;
+  width: 100%;
+  /* background-color: beige; */
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  gap: .6vw;
+
+}
+
+.alphabet h5  {
+  font-size: 2vw;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-style: italic;
+  border-bottom: 2px  solid #000;
+  letter-spacing: 4px;
+}
+.alphabet h6  {
+  font-size: 1vw;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 4px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  padding: .8vw 1vw;
+  cursor: pointer;
+  transition: .1s ease-in;
+}
+.alphabet h6:hover  {
+  border-radius: 50%;
+  border: 1px solid rgb(39, 39, 39);
+}
+
+.page2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3vw 2vw;
+  gap: 3vw;
+  overflow: hidden;
+}
+
+.page2 .page2-part1 {
+  width: 60%;
+  height: 100%;
+}
+
+.page2 .page2-part1 {
+  width: 60%;
+  height: 100%;
+}
+
+.page2 .page2-part1 img {
+  width: 90%;
+  height: 110%;
+  object-fit: cover;
+  /* overflow: 700% 100% 100% 100% ;  */
+}
+.page2 .page2-part2 {
+  width: 60%;
+  height: 100%;
+}
+.page2 .page2-part2 img {
+  width: 90%;
+  height : 90%;
+  object-fit: cover;
+}
+.page2 .page2-part2 .box {
+  width: 90%;
+  height: 22%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1vw;
+  padding: 1vw;
+}
+.page2 .page2-part2 .box h5 {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.page2 .page2-part2 .box p {
+  text-align: justify;
+  font-size: 17px;
+  line-height: 22px;
+}
+
+.page3 {
+  width: 100%;
+  height: 100%;
+  /* background-color: royalblue; */
+  padding: 3vw;
+  padding-top: 6vw;
+}
+
+.page3>h1 {
+  text-align: center;
+  text-transform:uppercase ;
+  font-size: 3VW;
+
+}
+.elem {
+  height: 16vh;
+  width: 100%;
+  /* background-color: aqua; */
+  border-top: 2px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+
+}
+.elem:nth-last-child(1) {
+  border-bottom: 2px solid #000;
+}
+
+.elem h4 {
+  font-size: 1.2vw;
+  text-transform: uppercase;
+  font-weight: 500;
+  width: 6%;
+
+}
+
+.elem .elem-part2 {
+  width: 45%;
+}
+
+.elem-part2 h1 {
+  font-size: 2.7vw;
+  font-weight: 500;
+  transition: ease 0.3s;
+}
+.elem-part2 h5 {
+  font-size: .8vw;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.elem img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  left: 10%;
+  opacity: 0;
+  transition: all ease 0.7s;
+}
+.elem:hover img{
+  opacity: 1;
+  left: 20%;
+}
+
+.elem:hover .elem-part2 h1 {
+  /* color: aqua; */
+  font-size: 3vw;
+}
+
+.marque {
+  width: 100%;
+  /* height: 100%; */
+  /* background: #ff5353; */
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: .2vw;
+}
+
+.marque h1 {
+  display: inline-block;
+  font-size: 4vw;
+  text-transform: uppercase;
+  font-weight: 900;
+  -webkit-text-stroke: 2px #000;
+  margin-right: 16px;
+  color :transparent;
+  animation-name: marqueeAnimation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  letter-spacing: .3vw;
+}
+
+@keyframes  marqueeAnimation {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100%  - 20px));
+  }
+}
+.footer {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #ff5353; */
+}
